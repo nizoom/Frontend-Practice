@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(111, 67, 137);
+}
+
+h1{
+    text-align: center;
+}
+
+.li {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(166, 191, 214);
+}
+
+
+.li p{
+    margin-left: 10px;
+}
+
+.btns-wrapper{
+    display: flex;
+    gap: 30px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+

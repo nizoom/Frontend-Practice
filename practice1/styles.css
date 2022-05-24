@@ -1,0 +1,85 @@
+body{
+    background-color: #2941AB;
+    font-family: sans-serif;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: black;
+ 
+    height: 80px;
+    margin:0;
+    padding:0;
+    align-items: center;
+
+}
+
+.name {
+    margin-left: 70px;
+    font-weight: 400;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    height: 45px;
+    width: 45px;
+    background-color:white;
+    border-radius: 50%;
+    display: block;
+ 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+nav p{
+    margin: 15px;
+    font-weight: bold;
+}
+
+.divider{
+    font-size: 25px;
+    font-weight: 100;
+
+}
+
+section{
+    margin-top: 40%;
+    text-align: center;
+    
+    justify-content: center;
+  
+}
+.grabber {
+    color: #35D760;
+    font-size: 100px;
+    margin-bottom: 10px;
+    
+}
+
+section p{
+    color: #444d46;
+    font-weight: 400;
+    font-size: large;
+    color: #35D760;
+}
+
+section button {
+    margin-top: 20px;
+    background-color: #35D760;
+    color: #2941AB;
+    padding: 20px;
+    border-radius: 500px;
+    border: none;
+    font-weight: 600;
+}
