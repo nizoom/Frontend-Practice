@@ -13,7 +13,9 @@ domStrings.startBtn.addEventListener('click', startWatch)
 
 let watchStatus = true;
 
-let seconds = 50
+let seconds = 0
+
+let minutes = 0
 
 function startWatch(){
 
@@ -46,21 +48,15 @@ function startWatch(){
 
 function setDisplay(){
 
-    const longerThanAMinute = seconds > 59 ? true : false
+    if( seconds > 59 ) {
 
-    const minutes = longerThanAMinute ? Math.floor(seconds / 60) : '00';
+        minutes ++
+        seconds = 0
+    }
 
-    const totalMinutesInSeconds = minutes * 60 
+    const secondsStr = seconds < 10 ? `0${seconds}` : seconds
 
-    const totalSeconds = totalMinutesInSeconds + seconds 
-
-    console.log(longerThanAMinute)
-
-    const secondsForDisplay = longerThanAMinute ?  totalSeconds - totalMinutesInSeconds : seconds 
-
-    console.log(`${minutes}:${secondsForDisplay}`); 
-
-    domStrings.timer.innerHTML = `${minutes}:${secondsForDisplay}`
+    domStrings.timer.innerHTML = `${minutes}:${secondsStr}`
 
 }
 
@@ -81,6 +77,8 @@ domStrings.resetBtn.addEventListener('click', resetWatch)
 function resetWatch(){
 
     seconds = 0
+
+    minutes = 0;
 
     setDisplay();
 
